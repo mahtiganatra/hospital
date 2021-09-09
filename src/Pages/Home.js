@@ -1,18 +1,25 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import DatePickers from '../Components/DateTimePicker';
+import PrimarySearchAppBar from '../Components/SearchBar';
+import ContainedButtons from '../Components/AppBar';
+import CheckboxLabels from '../Components/Checkbox';
+import MaterialUIPickers2 from '../Components/Date';
 
 export default function Home() {
   return (
     <React.Fragment>
         <Container fixed>
-            <p>
-                Welcome to your web application. Make something beautiful!
-            </p>
-            <p>
-                To get started, edit <code>src/App.js</code>, save, and reload this page.
-            </p>
+
             <DatePickers/>
+        <PrimarySearchAppBar/>
+           <ContainedButtons/>
+           <CheckboxLabels/>
+           <MaterialUIPickers2/>
+           
+           
+             
+           
         </Container>
     </React.Fragment>
   );
