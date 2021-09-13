@@ -10,7 +10,7 @@ import IconButtons from '../Components/HomeIcons';
 import OutlinedCard1 from '../Components/BottomCard';
 
 
-export default function Home() {
+export default function Thankyou() {
   return (
     <React.Fragment>
         <Container fixed>
