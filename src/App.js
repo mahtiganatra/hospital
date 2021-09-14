@@ -9,6 +9,7 @@ import Package from './Pages/Package';
 import Senior from './Pages/Senior';
 import Checkup from './Pages/Checkup';
 import { Details } from '@material-ui/icons';
+import Trial from './Pages/Trial';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
             <Route path={process.env.PUBLIC_URL + '/Senior'} > <Senior/> </Route>
             <Route path={process.env.PUBLIC_URL + '/Checkup'} > <Checkup/> </Route>
             <Route path={process.env.PUBLIC_URL + '/Details'} > <Details/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/Trial'} > <Trial/> </Route>
           </Switch>
 
       <footer className="App-footer">
