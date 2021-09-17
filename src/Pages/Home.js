@@ -18,7 +18,16 @@ import OutlinedCard6 from '../Components/UpdatesCard3';
 import OutlinedCard7 from '../Components/UpdatesCard4';
 import OutlinedCard8 from '../Components/UpdatesCard5';
 import OutlinedCard9 from '../Components/UpdatesCard6';
-
+import BasicTextFields1 from '../Components/TestimonialTxt';
+import MediaCard from '../Components/TestimonialCard1';
+import MediaCard1 from '../Components/TestimonialCard2';
+import MediaCard2 from '../Components/TestimonialCard3';
+import MediaCard3 from '../Components/TestimonialCard4';
+import BasicTextFields2 from '../Components/SocialInitTxt';
+import MediaCard5 from '../Components/SocilInitCard1'
+import MediaCard6 from '../Components/SocialInitCard2';
+import MediaCard7 from '../Components/SocialInitCard3';
+import MediaCard8 from '../Components/SocialInitCard4';
 
 export default function Home() {
   return (
@@ -39,6 +48,17 @@ export default function Home() {
 <OutlinedCard7/>
 <OutlinedCard8/>
 <OutlinedCard9/>
+<BasicTextFields1/>
+<MediaCard/> 
+<MediaCard1/>
+<MediaCard2/>
+<MediaCard3/>
+<BasicTextFields2/>
+<MediaCard5/>
+<MediaCard6/>
+<MediaCard7/>
+<MediaCard8/>
+
 
 
            

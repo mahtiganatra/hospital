@@ -10,6 +10,8 @@ import Senior from './Pages/Senior';
 import Checkup from './Pages/Checkup';
 import { Details } from '@material-ui/icons';
 import Trial from './Pages/Trial';
+import OutlinedCard1 from './Components/BottomCard';
+import DisableElevation4 from './Components/EmergencyButton';
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
       <header className="App-header">
       
       </header>
+      
       
       {/* Router - Pages */}
           <Switch>
@@ -35,8 +38,11 @@ function App() {
           </Switch>
 
       <footer className="App-footer">
-        This is a footer
+        {/* This is a footer */}
+        <DisableElevation4/>
+        
       </footer>
+      <OutlinedCard1/>
     </div>
   );
   }
