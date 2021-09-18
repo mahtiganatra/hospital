@@ -28,12 +28,17 @@ import MediaCard5 from '../Components/SocilInitCard1'
 import MediaCard6 from '../Components/SocialInitCard2';
 import MediaCard7 from '../Components/SocialInitCard3';
 import MediaCard8 from '../Components/SocialInitCard4';
+// import Hospilogo from '../Assets/lilavati.svg'\
+import Ambulance from '../Assets/Ambulance.svg'
 
 export default function Home() {
   return (
     <React.Fragment>
         <Container fixed>
-        <ProminentAppBar/>
+        {/* <img src={Hospilogo} className="HospiLogo" alt="HospiLogo" /> */}
+        
+
+        {/* <ProminentAppBar/> */}
 <OutlinedCard/>
 {/* <IconButtons/> */}
 {/* <IconButtons/> */}
@@ -58,6 +63,7 @@ export default function Home() {
 <MediaCard6/>
 <MediaCard7/>
 <MediaCard8/>
+
 
 
 

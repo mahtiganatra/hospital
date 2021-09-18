@@ -12,6 +12,7 @@ import { Details } from '@material-ui/icons';
 import Trial from './Pages/Trial';
 import OutlinedCard1 from './Components/BottomCard';
 import DisableElevation4 from './Components/EmergencyButton';
+import ProminentAppBar from './Components/HomeBar';
 
 
 function App() {
@@ -19,13 +20,14 @@ function App() {
     <div className="App">
       {/* Header (Navigation Bar) */}
       <header className="App-header">
+      <ProminentAppBar/>
       
       </header>
       
       
       {/* Router - Pages */}
           <Switch>
-            <Route path={process.env.PUBLIC_URL + '/'} exact > <Home/> </Route>
+            {/* <Route path={process.env.PUBLIC_URL + '/'} exact > <Home/> </Route> */}
             <Route path={process.env.PUBLIC_URL + '/home'} > <Home/> </Route>
             <Route path={process.env.PUBLIC_URL + '/gallery'}  > <Gallery/> </Route>
             <Route path={process.env.PUBLIC_URL + '/services'}  > <Services/> </Route>
@@ -36,6 +38,7 @@ function App() {
             <Route path={process.env.PUBLIC_URL + '/Details'} > <Details/> </Route>
             <Route path={process.env.PUBLIC_URL + '/Trial'} > <Trial/> </Route>
           </Switch>
+          
 
       <footer className="App-footer">
         {/* This is a footer */}

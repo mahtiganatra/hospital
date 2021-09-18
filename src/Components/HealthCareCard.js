@@ -5,6 +5,11 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import DisableElevation from './Button1';
+import DisableElevation1 from './Appointment';
+import DisableElevation2 from './HealthCare';
+import SimpleList from './HomeList';
+import HealthCareList from './HealthcareList';
 
 const useStyles = makeStyles({
   root: {
@@ -23,7 +28,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function OutlinedCard1() {
+export default function HealthCareCard() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
@@ -34,22 +39,24 @@ export default function OutlinedCard1() {
           
         </Typography>
         <Typography variant="h5" component="h2">
-          Lilavati Hospital
+          Health
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-          More than healthcare, Human Care
+          {/* <DisableElevation/> */}
+          
+
         </Typography>
         <Typography variant="body2" component="p">
-          Ambulance
-          Convenience and Facilities
-          Media and press Release
-          Social Initiatives
-          Floor Directory
-          Photo Gallery
-          Statutory Compliance
-          E Tender
+          {/* <DisableElevation1/> */}
 
+          </Typography>
+        <Typography variant="body6" component="p">  
+
+        <HealthCareList/>
+
+         
           <br />
+         
           {}
         </Typography>
       </CardContent>

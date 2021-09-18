@@ -8,13 +8,14 @@ import MaterialUIPickers2 from '../Components/Date';
 import OutlinedCard from '../Components/HomepageCard';
 import IconButtons from '../Components/HomeIcons';
 import OutlinedCard1 from '../Components/BottomCard';
+import PackagesCard from '../Components/PackagesCard';
 
 
 export default function Package() {
   return (
     <React.Fragment>
         <Container fixed>
-<OutlinedCard/>
+<PackagesCard/>
 <IconButtons/>
 <IconButtons/>
 <IconButtons/>

@@ -11,10 +11,11 @@ import AirportShuttleIcon from '@material-ui/icons/AirportShuttle';
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import AttachMoney from '@material-ui/icons/AttachMoney';
-import Ambulance from '../Assets/Ambulance.svg'
-import Appointment from '../Assets/Appointment.svg'
-import HealthCareic from '../Assets/HealthCareic.svg'
+// import Ambulance from '../Assets/Ambulance.svg'
+// import Appointment from '../Assets/Appointment.svg'
 import Finances from '../Assets/Finances.svg'
+import CovidCare from '../Assets/CovidCare.svg'
+import HealthChkup from '../Assets/HealthChkup.svg'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,7 +29,7 @@ function ListItemLink(props) {
   return <ListItem button component="a" {...props} />;
 }
 
-export default function SimpleList() {
+export default function HealthCareList() {
   const classes = useStyles();
 
   return (
@@ -37,7 +38,7 @@ export default function SimpleList() {
         <ListItem button>
           <ListItemIcon>
             {/* <AirportShuttleIcon/> */}
-            <img src={Ambulance} className="Ambulance" alt="Ambulance" />
+            <img src={CovidCare} className="CovidCare" alt="CovidCare" />
 
           </ListItemIcon>
           <ListItemText primary="" />
@@ -45,7 +46,7 @@ export default function SimpleList() {
         <ListItem button>
           <ListItemIcon>
             {/* <CalendarTodayIcon/> */}
-            <img src={Appointment} className="Appointment" alt="Appointment" />
+            <img src={HealthChkup} className="HealthChkup" alt="HealthChkup" />
           </ListItemIcon>
           {/* <ListItemText primary="Appointment" /> */}
         </ListItem>
@@ -55,12 +56,12 @@ export default function SimpleList() {
           
         <ListItem button>
             {/* <FavoriteBorderIcon/> */}
-            <img src={HealthCareic} className="HealthCareic" alt="HealthCareic" />
+          
           {/* <ListItemText primary="Health Care" /> */}
         </ListItem>
         <ListItemLink href="#simple-list">
             {/* <AttachMoney/> */}
-            <img src={Finances} className="Finances" alt="Finances" />
+            {/* <img src={Finances} className="Finances" alt="Finances" /> */}
           {/* <ListItemText primary="Finance" /> */}
         </ListItemLink>
       </List>
