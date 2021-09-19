@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80.432" height="84.322" viewBox="0 0 80.432 84.322">
+  <g id="Group_397" data-name="Group 397" transform="translate(-58 -427.678)">
+    <g id="Group_395" data-name="Group 395" transform="translate(-14115 -8119)">
+      <g id="Group_24" data-name="Group 24" transform="translate(14176.25 8546.678)">
+        <path id="Path_119" data-name="Path 119" d="M800.87,268.941c7.17,0,14.34.012,21.512-.011a3.165,3.165,0,0,1,2.851,1.46q5.648,8.129,11.346,16.223a2.628,2.628,0,0,1-.14,3.7q-16.721,20.057-33.448,40.111a2.635,2.635,0,0,1-4.247-.01q-16.75-20.08-33.493-40.166a2.6,2.6,0,0,1-.123-3.588q5.719-8.167,11.427-16.337a2.98,2.98,0,0,1,2.664-1.388Q790.044,268.954,800.87,268.941Zm-12.607,22.026,12.608,36.858,12.638-36.858Zm-18.017-.033,24.86,29.794a.329.329,0,0,0,.035-.3q-5.613-14.465-11.214-28.936c-.2-.51-.5-.567-.957-.566-3.979.013-7.96.006-11.939.006Zm61.246,0H830.6c-3.926,0-7.853.014-11.779-.015a.978.978,0,0,0-1.088.749q-5.485,14.209-11.016,28.4c-.079.2-.135.4-.2.606l.115.046Zm-17.2-3.445-13.426-14.9-13.421,14.9Zm-29.535-2.151,11.2-12.482H779.9Zm20.687-12.748,11.7,12.987,5.015-12.987Zm-24.118,14.9-4.532-11.635-8.137,11.635Zm43.612-11.654-4.528,11.654h12.676Z" transform="translate(-764.47 -268.925)" fill="#0d8f9f"/>
+      </g>
+      <g id="Group_389" data-name="Group 389" transform="translate(14231.723 8588.356)">
+        <line id="Line_63" data-name="Line 63" y2="20.482" transform="translate(10.241)" fill="none" stroke="#0d8f9f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.455"/>
+        <line id="Line_64" data-name="Line 64" x1="20.482" transform="translate(0 10.241)" fill="none" stroke="#0d8f9f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.455"/>
+      </g>
+    </g>
+    <text id="Solitaire_Plus" data-name="Solitaire Plus" transform="translate(98 508)" fill="#707070" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-39.399" y="0">Solitaire Plus</tspan></text>
+  </g>
+</svg>
