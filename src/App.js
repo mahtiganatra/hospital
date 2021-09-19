@@ -13,6 +13,8 @@ import Trial from './Pages/Trial';
 import OutlinedCard1 from './Components/BottomCard';
 import DisableElevation4 from './Components/EmergencyButton';
 import ProminentAppBar from './Components/HomeBar';
+import Info from './Pages/Info';
+import Thankyou from './Pages/Thankyou';
 
 
 function App() {
@@ -37,6 +39,9 @@ function App() {
             <Route path={process.env.PUBLIC_URL + '/Checkup'} > <Checkup/> </Route>
             <Route path={process.env.PUBLIC_URL + '/Details'} > <Details/> </Route>
             <Route path={process.env.PUBLIC_URL + '/Trial'} > <Trial/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/Info'} > <Info/> </Route>
+            <Route path={process.env.PUBLIC_URL + '/Thankyou'} > <Thankyou/> </Route>
+           
           </Switch>
           
 

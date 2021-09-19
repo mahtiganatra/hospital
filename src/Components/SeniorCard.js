@@ -5,15 +5,8 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import DisableElevation from './Button1';
-import DisableElevation1 from './Appointment';
-import DisableElevation2 from './HealthCare';
-// import SimpleList from './HomeList';
-import DisableElevation6 from './Male';
-import DisableElevation7 from './Female'
-import SimpleListp from './PackageList';
-import SimpleListq from './PackageList2'
-import SimpleListr from './PackageList3';
+
+
 
 
 
@@ -35,7 +28,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function PackagesCard() {
+export default function SeniorCard() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
@@ -49,27 +42,36 @@ export default function PackagesCard() {
           
         </Typography>
         <Typography variant="h6" component="h2">
-         Packages
-         <DisableElevation6/>
-         <DisableElevation7/>
+         Senior Citizen - Male
+         
 
          
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
           {/* <DisableElevation/> */}
+          Package Description
           
 
         </Typography>
         <Typography variant="body2" component="p">
           {/* <DisableElevation1/> */}
+          Only males above the age of 60 years are 
+eligible for this package.
+    Early intervention helps in reducing the cost 
+to a great extent.The package focuses on-
+Ophthalmology.
+General Routine Blood check up with 
+Physician, Surgeon/Gynaecology.
+ENT.
+Dental Consultation.
+It also offers gender specific tests like 
+Prostate screening.
 
           </Typography>
-        <Typography variant="body6" component="p">  
+          <Typography variant="h5" component="h2">
+        ₹ 9000 /-
 
         
-        <SimpleListp/>
-        <SimpleListq/>
-        <SimpleListr/>
         
 
          

@@ -3,20 +3,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import DisableElevation from './Button1';
-import DisableElevation1 from './Appointment';
-import DisableElevation2 from './HealthCare';
-// import SimpleList from './HomeList';
-import DisableElevation6 from './Male';
-import DisableElevation7 from './Female'
-import SimpleListp from './PackageList';
-import SimpleListq from './PackageList2'
-import SimpleListr from './PackageList3';
+import DatePickers3 from './Datefill';
+import Contact from './Contact'
+import Email from './Email'
+import DisableElevation8 from './ReqAppBt';
 
 
-
+import Name from './Name';
 
 const useStyles = makeStyles({
   root: {
@@ -35,50 +29,41 @@ const useStyles = makeStyles({
   },
 });
 
-export default function PackagesCard() {
+export default function InfoCard() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <Card className={classes.root} variant="outlined">
       <CardContent>
-
-        
-
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           
         </Typography>
-        <Typography variant="h6" component="h2">
-         Packages
-         <DisableElevation6/>
-         <DisableElevation7/>
-
-         
+        <Typography variant="h5" component="h2">
+          Help us get back to you
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
           {/* <DisableElevation/> */}
+          <Name/>
           
 
         </Typography>
         <Typography variant="body2" component="p">
           {/* <DisableElevation1/> */}
+          <Email/>
 
           </Typography>
         <Typography variant="body6" component="p">  
-
+        <DatePickers3/>
+          <Contact/>
         
-        <SimpleListp/>
-        <SimpleListq/>
-        <SimpleListr/>
-        
-
+<DisableElevation8/>
          
           <br />
          
           {}
         </Typography>
       </CardContent>
-     
       <CardActions>
         {/* <Button size="small">Learn More</Button> */}
       </CardActions>

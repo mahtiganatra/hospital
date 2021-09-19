@@ -11,15 +11,17 @@ import OutlinedCard1 from '../Components/BottomCard';
 import PackagesCard from '../Components/PackagesCard';
 
 
+
 export default function Package() {
   return (
     <React.Fragment>
         <Container fixed>
 <PackagesCard/>
-<IconButtons/>
-<IconButtons/>
-<IconButtons/>
-<OutlinedCard1/>
+
+{/* <IconButtons/> */}
+{/* <IconButtons/> */}
+{/* <IconButtons/> */}
+{/* <OutlinedCard1/> */}
 
            
            

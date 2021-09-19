@@ -3,17 +3,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import DisableElevation from './Button1';
-import DisableElevation1 from './Appointment';
-import DisableElevation2 from './HealthCare';
-// import SimpleList from './HomeList';
-import DisableElevation6 from './Male';
-import DisableElevation7 from './Female'
-import SimpleListp from './PackageList';
-import SimpleListq from './PackageList2'
-import SimpleListr from './PackageList3';
+import DatePickers3 from './Datefill';
+import Contact from './Contact'
+import Email from './Email'
+import DisableElevation8 from './ReqAppBt';
+import Tick from '../Assets/Tick.svg'
+import DisableElevation9 from './Bookap';
+import DisableElevation10 from './Homebt';
 
 
 
@@ -35,41 +32,41 @@ const useStyles = makeStyles({
   },
 });
 
-export default function PackagesCard() {
+export default function ThankyouC() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <Card className={classes.root} variant="outlined">
       <CardContent>
-
-        
-
+      <img src={Tick} className="Tick" alt="Tick" />
         <Typography className={classes.title} color="textSecondary" gutterBottom>
+            Thank You
           
         </Typography>
-        <Typography variant="h6" component="h2">
-         Packages
-         <DisableElevation6/>
-         <DisableElevation7/>
-
-         
+        <Typography variant="h5" component="h2">
+          For choosing Lilavati
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
           {/* <DisableElevation/> */}
+          Your request has been filed & we will contact you shortly.
+
+          
+          
           
 
         </Typography>
         <Typography variant="body2" component="p">
           {/* <DisableElevation1/> */}
+         
+         
+        
 
           </Typography>
         <Typography variant="body6" component="p">  
-
         
-        <SimpleListp/>
-        <SimpleListq/>
-        <SimpleListr/>
+      
+         
         
 
          
@@ -78,10 +75,12 @@ export default function PackagesCard() {
           {}
         </Typography>
       </CardContent>
-     
+      
       <CardActions>
+      
         {/* <Button size="small">Learn More</Button> */}
       </CardActions>
+      
     </Card>
   );
 }

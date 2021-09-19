@@ -8,15 +8,8 @@ import Typography from '@material-ui/core/Typography';
 import DisableElevation from './Button1';
 import DisableElevation1 from './Appointment';
 import DisableElevation2 from './HealthCare';
-// import SimpleList from './HomeList';
-import DisableElevation6 from './Male';
-import DisableElevation7 from './Female'
-import SimpleListp from './PackageList';
-import SimpleListq from './PackageList2'
-import SimpleListr from './PackageList3';
-
-
-
+import SimpleList from './HomeList';
+import HealthCareList from './HealthcareList';
 
 const useStyles = makeStyles({
   root: {
@@ -35,25 +28,18 @@ const useStyles = makeStyles({
   },
 });
 
-export default function PackagesCard() {
+export default function DetailsCard() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <Card className={classes.root} variant="outlined">
       <CardContent>
-
-        
-
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           
         </Typography>
-        <Typography variant="h6" component="h2">
-         Packages
-         <DisableElevation6/>
-         <DisableElevation7/>
-
-         
+        <Typography variant="h5" component="h2">
+          Health
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
           {/* <DisableElevation/> */}
@@ -66,11 +52,7 @@ export default function PackagesCard() {
           </Typography>
         <Typography variant="body6" component="p">  
 
-        
-        <SimpleListp/>
-        <SimpleListq/>
-        <SimpleListr/>
-        
+        <HealthCareList/>
 
          
           <br />
@@ -78,7 +60,6 @@ export default function PackagesCard() {
           {}
         </Typography>
       </CardContent>
-     
       <CardActions>
         {/* <Button size="small">Learn More</Button> */}
       </CardActions>
