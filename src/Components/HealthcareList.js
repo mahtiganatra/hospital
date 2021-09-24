@@ -16,6 +16,8 @@ import AttachMoney from '@material-ui/icons/AttachMoney';
 import Finances from '../Assets/Finances.svg'
 import CovidCare from '../Assets/CovidCare.svg'
 import HealthChkup from '../Assets/HealthChkup.svg'
+import { Link, Router } from "react-router-dom";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -43,25 +45,29 @@ export default function HealthCareList() {
           </ListItemIcon>
           <ListItemText primary="" />
         </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            {/* <CalendarTodayIcon/> */}
-            <img src={HealthChkup} className="HealthChkup" alt="HealthChkup" />
-          </ListItemIcon>
-          {/* <ListItemText primary="Appointment" /> */}
-        </ListItem>
+        {/* <ListItem button> */}
+        {/* <ListItemIcon> */}
+        {/* <CalendarTodayIcon/> */}
+        {/* <img src={HealthChkup} className="HealthChkup" alt="HealthChkup" /> */}
+        {/* </ListItemIcon> */}
+        {/* <ListItemText primary="Appointment" /> */}
+        <Link to={process.env.PUBLIC_URL + '/Package'}>
+          <ListItem button>
+            <img src={HealthChkup} className="HealthChkup" alt="HealthChkup" /> </ListItem>
+        </Link>
+        {/* </ListItem> */}
       </List>
       {/* <Divider /> */}
       <List component="nav" aria-label="main mailbox folders">
-          
+
         <ListItem button>
-            {/* <FavoriteBorderIcon/> */}
-          
+          {/* <FavoriteBorderIcon/> */}
+
           {/* <ListItemText primary="Health Care" /> */}
         </ListItem>
         <ListItemLink href="#simple-list">
-            {/* <AttachMoney/> */}
-            {/* <img src={Finances} className="Finances" alt="Finances" /> */}
+          {/* <AttachMoney/> */}
+          {/* <img src={Finances} className="Finances" alt="Finances" /> */}
           {/* <ListItemText primary="Finance" /> */}
         </ListItemLink>
       </List>

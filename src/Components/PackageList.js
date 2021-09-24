@@ -15,7 +15,8 @@ import Premium from '../Assets/Premium.svg'
 import Solitare from '../Assets/Solitare.svg'
 import SolitareP from '../Assets/SolitareP.svg'
 import SeniorC from '../Assets/SeniorC.svg'
-import Silver from '../Assets/Silver.svg'
+import { Link, Router } from "react-router-dom";
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -53,20 +54,25 @@ export default function SimpleListp() {
         </ListItem>
       </List>
       {/* <Divider /> */}
-      <List component="nav" aria-label="main mailbox folders">
+      {/* <List component="nav" aria-label="main mailbox folders"> */}
           
         <ListItem button>
             {/* <FavoriteBorderIcon/> */}
             <img src={SolitareP} className="SolitareP" alt="SolitareP" />
           {/* <ListItemText primary="Health Care" /> */}
         </ListItem>
-        <ListItemLink href="#simple-list">
+        {/* <ListItemLink href="#simple-list"> */}
             {/* <AttachMoney/> */}
-            <img src={SeniorC} className="SeniorC" alt="SeniorC" />
+            {/* <img src={SeniorC} className="SeniorC" alt="SeniorC" /> */}
           {/* <ListItemText primary="Finance" /> */}
+          <Link to={process.env.PUBLIC_URL + '/Senior'}>
+          <ListItem button>
+          <img src={SeniorC} className="SeniorC" alt="SeniorC" /> </ListItem>
+        </Link>
+        
 
-        </ListItemLink>
-      </List>
+        {/* </ListItemLink> */}
+      {/* </List> */}
     </div>
   );
 

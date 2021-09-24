@@ -15,6 +15,8 @@ import Ambulance from '../Assets/Ambulance.svg'
 import Appointment from '../Assets/Appointment.svg'
 import HealthCareic from '../Assets/HealthCareic.svg'
 import Finances from '../Assets/Finances.svg'
+import { Link, Router } from "react-router-dom";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -52,15 +54,20 @@ export default function SimpleList() {
       </List>
       {/* <Divider /> */}
       <List component="nav" aria-label="main mailbox folders">
-          
-        <ListItem button>
-            {/* <FavoriteBorderIcon/> */}
-            <img src={HealthCareic} className="HealthCareic" alt="HealthCareic" />
+
+        {/* <ListItem button> */}
+          {/* <FavoriteBorderIcon/> */}
+          {/* <img src={HealthCareic} className="HealthCareic" alt="HealthCareic" /> */}
           {/* <ListItemText primary="Health Care" /> */}
-        </ListItem>
+          <Link to={process.env.PUBLIC_URL + '/HealthCare'}>
+            <ListItem button> <img src={HealthCareic} className="HealthCareic" alt="HealthCareic" /></ListItem>
+          </Link>
+
+
+        {/* </ListItem> */}
         <ListItemLink href="#simple-list">
-            {/* <AttachMoney/> */}
-            <img src={Finances} className="Finances" alt="Finances" />
+          {/* <AttachMoney/> */}
+          <img src={Finances} className="Finances" alt="Finances" />
           {/* <ListItemText primary="Finance" /> */}
         </ListItemLink>
       </List>

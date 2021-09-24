@@ -15,6 +15,7 @@ import DisableElevation10 from './Homebt';
 
 
 
+
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
@@ -58,6 +59,7 @@ export default function ThankyouC() {
         </Typography>
         <Typography variant="body2" component="p">
           {/* <DisableElevation1/> */}
+          <DisableElevation10/>
          
          
         
