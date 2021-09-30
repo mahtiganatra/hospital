@@ -9,9 +9,9 @@ export default function DisableElevation10() {
     // {/* </Button> */}
 
 <Link to={process.env.PUBLIC_URL + '/Home'}>
-{/* <Button variant="contained" color="primary" disableElevation> */}
+<Button variant="contained" color="primary" disableElevation>
       Home
-    {/* </Button> */}
+    </Button>
 
 </Link>
 

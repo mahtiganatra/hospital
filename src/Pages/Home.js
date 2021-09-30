@@ -29,49 +29,112 @@ import MediaCard6 from '../Components/SocialInitCard2';
 import MediaCard7 from '../Components/SocialInitCard3';
 import MediaCard8 from '../Components/SocialInitCard4';
 // import Hospilogo from '../Assets/lilavati.svg'\
-import Ambulance from '../Assets/Ambulance.svg'
+// import Ambulance from '../Assets/Ambulance.svg'
+import Grid from '@material-ui/core/Grid';
+
 
 export default function Home() {
   return (
     <React.Fragment>
-        <Container fixed>
-        {/* <img src={Hospilogo} className="HospiLogo" alt="HospiLogo" /> */}
-        
+      <Container fixed>
+        <Grid container spacing={3} justifyContent="center">
 
-        {/* <ProminentAppBar/> */}
-<OutlinedCard/>
-{/* <IconButtons/> */}
-{/* <IconButtons/> */}
-{/* <IconButtons/> */}
-{/* <OutlinedCard1/> */}
-{/* <SimpleList/> */}
-<SwipeableTextMobileStepper/>
-<BasicTextFields/>
-<OutlinedCard4/>
-<OutlinedCard5/>
-<OutlinedCard6/>
-<OutlinedCard7/>
-<OutlinedCard8/>
-<OutlinedCard9/>
-<BasicTextFields1/>
-<MediaCard/> 
-<MediaCard1/>
-<MediaCard2/>
-<MediaCard3/>
-<BasicTextFields2/>
-<MediaCard5/>
-<MediaCard6/>
-<MediaCard7/>
-<MediaCard8/>
+          {/* <img src={Hospilogo} className="HospiLogo" alt="HospiLogo" /> */}
 
 
+          {/* <ProminentAppBar/> */}
+
+          <Grid item xs={10}>
+            <OutlinedCard />
+          </Grid>
+
+          {/* <IconButtons/> */}
+          {/* <IconButtons/> */}
+          {/* <IconButtons/> */}
+          {/* <OutlinedCard1/> */}
+          {/* <SimpleList/> */}
+
+          <Grid item xs={10}>
+            <SwipeableTextMobileStepper />
+          </Grid>
+
+          <Grid item xs={10}>
+            <BasicTextFields />
+          </Grid>
+
+          <Grid item xs={10}>
+            <OutlinedCard4 />
+          </Grid>
+
+          <Grid item xs={10}>
+            <OutlinedCard5 />
+          </Grid>
+
+          <Grid item xs={10}>
+            <OutlinedCard6 />
+          </Grid>
+
+          <Grid item xs={10}>
+            <OutlinedCard7 />
+          </Grid>
+
+          <Grid item xs={10}>
+            <OutlinedCard8 />
+          </Grid>
+
+          <Grid item xs={10}>
+            <OutlinedCard9 />
+          </Grid>
+
+          <Grid item xs={10}>
+            <BasicTextFields1 />
+          </Grid>
+
+          <Grid item xs={10}>
+            <MediaCard />
+          </Grid>
+
+          <Grid item xs={10}>
+            <MediaCard1 />
+          </Grid>
+
+          <Grid item xs={10}>
+            <MediaCard2 />
+          </Grid>
+
+          <Grid item xs={10}>
+            <MediaCard3 />
+          </Grid>
+
+          <Grid item xs={10}>
+            <BasicTextFields2 />
+          </Grid>
+
+          <Grid item xs={10}>
+            <MediaCard5 />
+          </Grid>
+
+          <Grid item xs={10}>
+            <MediaCard6 />
+          </Grid>
+
+          <Grid item xs={10}>
+            <MediaCard7 />
+          </Grid>
+
+          <Grid item xs={10}>
+            <MediaCard8 />
+          </Grid>
 
 
-           
-           
-             
-           
-        </Container>
-    </React.Fragment>
+
+
+
+
+
+        </Grid>
+
+      </Container>
+    </React.Fragment >
   );
 }

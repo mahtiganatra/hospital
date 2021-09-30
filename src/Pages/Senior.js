@@ -10,6 +10,7 @@ export default function Senior() {
     <React.Fragment>
         <Container fixed>
           <SeniorCard/>
+          
           <DisableElevation8/>
 
             {/* <DatePickers/> */}

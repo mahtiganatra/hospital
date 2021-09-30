@@ -5,7 +5,8 @@ import IconButtons from '../Components/HomeIcons';
 import OutlinedCard1 from '../Components/BottomCard';
 
 
-export default function Info() {
+
+export default function Checkup() {
   return (
     <React.Fragment>
         <Container fixed>

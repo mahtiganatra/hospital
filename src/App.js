@@ -15,6 +15,7 @@ import DisableElevation4 from './Components/EmergencyButton';
 import ProminentAppBar from './Components/HomeBar';
 import Info from './Pages/Info';
 import Thankyou from './Pages/Thankyou';
+import SimpleDialogDemo from './Components/EmergencyOpen';
 
 
 function App() {
@@ -45,12 +46,13 @@ function App() {
           </Switch>
           
 
-      <footer className="App-footer">
+      {/* <footer className="App-footer"> */}
         {/* This is a footer */}
-        <DisableElevation4/>
+        {/* <DisableElevation4/> */}
+        <SimpleDialogDemo/>
         
-      </footer>
-      <OutlinedCard1/>
+      {/* </footer> */}
+       <OutlinedCard1/>
     </div>
   );
   }
