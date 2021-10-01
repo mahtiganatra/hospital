@@ -14,8 +14,9 @@ import AddIcon from '@material-ui/icons/Add';
 import Typography from '@material-ui/core/Typography';
 import { blue } from '@material-ui/core/colors';
 import Emergency from '../Assets/Emergency.svg'
+import PhoneIcon from '@material-ui/icons/Phone';
 
-const emails = ['username@gmail.com', 'user02@gmail.com'];
+const emails = ['Boardline number', '022-26751000'];
 const useStyles = makeStyles({
   avatar: {
     backgroundColor: blue[100],
@@ -37,13 +38,14 @@ function SimpleDialog(props) {
 
   return (
     <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
-      <DialogTitle id="simple-dialog-title">Set backup account</DialogTitle>
+      <DialogTitle id="simple-dialog-title">Emergency Helpline</DialogTitle>
       <List>
         {emails.map((email) => (
           <ListItem button onClick={() => handleListItemClick(email)} key={email}>
             <ListItemAvatar>
               <Avatar className={classes.avatar}>
-                <PersonIcon />
+                {/* <PersonIcon /> */}
+                <PhoneIcon />
               </Avatar>
             </ListItemAvatar>
             <ListItemText primary={email} />
@@ -53,10 +55,11 @@ function SimpleDialog(props) {
         <ListItem autoFocus button onClick={() => handleListItemClick('addAccount')}>
           <ListItemAvatar>
             <Avatar>
-              <AddIcon />
+              {/* <AddIcon /> */}
+              <PhoneIcon />
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary="Add account" />
+          <ListItemText primary="26568000" />
         </ListItem>
       </List>
     </Dialog>

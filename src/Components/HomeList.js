@@ -16,6 +16,7 @@ import Appointment from '../Assets/Appointment.svg'
 import HealthCareic from '../Assets/HealthCareic.svg'
 import Finances from '../Assets/Finances.svg'
 import { Link, Router } from "react-router-dom";
+import Grid from '@material-ui/core/Grid';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -28,34 +29,40 @@ const useStyles = makeStyles((theme) => ({
 
 function ListItemLink(props) {
   return <ListItem button component="a" {...props} />;
+
 }
 
 export default function SimpleList() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <List component="nav" aria-label="main mailbox folders">
-        <ListItem button>
-          <ListItemIcon>
-            {/* <AirportShuttleIcon/> */}
-            <img src={Ambulance} className="Ambulance" alt="Ambulance" />
+    <Grid container spacing={12} justifyContent="center">
+      <div className={classes.root}>
+        <List component="nav" aria-label="main mailbox folders">
 
-          </ListItemIcon>
-          <ListItemText primary="" />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            {/* <CalendarTodayIcon/> */}
-            <img src={Appointment} className="Appointment" alt="Appointment" />
-          </ListItemIcon>
-          {/* <ListItemText primary="Appointment" /> */}
-        </ListItem>
-      </List>
-      {/* <Divider /> */}
-      <List component="nav" aria-label="main mailbox folders">
+          <ListItem button>
+            <Grid item xs={10}>
+              <ListItemIcon>
+                {/* <AirportShuttleIcon/> */}
+                <img src={Ambulance} className="Ambulance" alt="Ambulance" />
 
-        {/* <ListItem button> */}
+              </ListItemIcon>
+            </Grid>
+            <ListItemText primary="" />
+
+          </ListItem>
+          <ListItem button>
+            <ListItemIcon>
+              {/* <CalendarTodayIcon/> */}
+              <img src={Appointment} className="Appointment" alt="Appointment" />
+            </ListItemIcon>
+            {/* <ListItemText primary="Appointment" /> */}
+          </ListItem>
+        </List>
+        {/* <Divider /> */}
+        <List component="nav" aria-label="main mailbox folders">
+
+          {/* <ListItem button> */}
           {/* <FavoriteBorderIcon/> */}
           {/* <img src={HealthCareic} className="HealthCareic" alt="HealthCareic" /> */}
           {/* <ListItemText primary="Health Care" /> */}
@@ -64,13 +71,15 @@ export default function SimpleList() {
           </Link>
 
 
-        {/* </ListItem> */}
-        <ListItemLink href="#simple-list">
-          {/* <AttachMoney/> */}
-          <img src={Finances} className="Finances" alt="Finances" />
-          {/* <ListItemText primary="Finance" /> */}
-        </ListItemLink>
-      </List>
-    </div>
+          {/* </ListItem> */}
+          <ListItemLink href="#simple-list">
+            {/* <AttachMoney/> */}
+            <img src={Finances} className="Finances" alt="Finances" />
+            {/* <ListItemText primary="Finance" /> */}
+          </ListItemLink>
+        </List>
+
+      </div>
+    </Grid>
   );
 }

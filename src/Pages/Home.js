@@ -54,7 +54,7 @@ export default function Home() {
           {/* <OutlinedCard1/> */}
           {/* <SimpleList/> */}
 
-          <Grid item xs={10}>
+          <Grid item xs={10} xl={10}>
             <SwipeableTextMobileStepper />
           </Grid>
 
