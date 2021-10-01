@@ -8,6 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Rajiv from '../Assets/Rajiv.svg'
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
   root: {
@@ -22,6 +23,7 @@ export default function MediaCard1() {
   const classes = useStyles();
 
   return (
+    <Grid container spacing={3} justifyContent="center">
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -48,5 +50,6 @@ export default function MediaCard1() {
         {/* </Button> */}
       </CardActions>
     </Card>
+    </Grid>
   );
 }
