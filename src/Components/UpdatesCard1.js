@@ -5,6 +5,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
   root: {
@@ -31,8 +32,8 @@ export default function OutlinedCard4() {
     <Card className={classes.root} variant="outlined">
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-        Lilavati Hospital introduces SAR-CoV-2 Antibody to Spike Protein (Quantitative) 
-        Test at Rs.1200/-
+          Lilavati Hospital introduces SAR-CoV-2 Antibody to Spike Protein (Quantitative)
+          Test at Rs.1200/-
         </Typography>
         <Typography variant="h5" component="h2">
           {/* be{bull}nev{bull}o{bull}lent */}
