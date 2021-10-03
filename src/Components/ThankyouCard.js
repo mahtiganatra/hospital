@@ -11,6 +11,8 @@ import DisableElevation8 from './ReqAppBt';
 import Tick from '../Assets/Tick.svg'
 import DisableElevation9 from './Bookap';
 import DisableElevation10 from './Homebt';
+import Grid from '@material-ui/core/Grid';
+import DisableElevation15 from './Book';
 
 
 
@@ -38,51 +40,66 @@ export default function ThankyouC() {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
+
     <Card className={classes.root} variant="outlined">
-      <CardContent>
-      <img src={Tick} className="Tick" alt="Tick" />
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-            Thank You
-          
-        </Typography>
-        <Typography variant="h5" component="h2">
-          For choosing Lilavati
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          {/* <DisableElevation/> */}
-          Your request has been filed & we will contact you shortly.
+      <Grid container spacing={-8} justifyContent="center">
+        <CardContent>
+          <img src={Tick} className="Tick" alt="Tick" />
+          <Typography className={classes.title} color="textSecondary" gutterBottom>
 
-          
-          
-          
-
-        </Typography>
-        <Typography variant="body2" component="p">
-          {/* <DisableElevation1/> */}
-          <DisableElevation10/>
-         
-         
-        
 
           </Typography>
-        <Typography variant="body6" component="p">  
-        
-      
-         
-        
+          <Typography variant="h5" component="h2">
+            <Grid item xs={12} >
+              Thank You
+            </Grid>
 
-         
-          <br />
-         
-          {}
-        </Typography>
-      </CardContent>
-      
+            <Typography variant="h6" component="h5">
+              <Grid item xs={12} >
+                For choosing Lilavati
+              </Grid>
+            </Typography>
+          </Typography>
+          <Typography className={classes.pos} color="textSecondary">
+            {/* <DisableElevation/> */}
+            Your request has been filed & we will contact you shortly.
+
+
+
+
+
+          </Typography>
+          <Typography variant="body2" component="p">
+            {/* <DisableElevation1/> */}
+            <DisableElevation10 />
+            <Grid item xs={12} >
+              <DisableElevation15 />
+            </Grid>
+
+
+
+
+
+          </Typography>
+          <Typography variant="body6" component="p">
+
+
+
+
+
+
+            {/* <br /> */}
+
+            { }
+          </Typography>
+        </CardContent>
+      </Grid>
+
       <CardActions>
-      
+
         {/* <Button size="small">Learn More</Button> */}
       </CardActions>
-      
+
     </Card>
   );
 }

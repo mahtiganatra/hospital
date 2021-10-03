@@ -33,15 +33,18 @@ export default function OutlinedCard() {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Grid container spacing={-8} justifyContent="center">
-      <Card className={classes.root} variant="outlined">
+    // <Grid container spacing={-8} justifyContent="center">
+    <Card className={classes.root} variant="outlined">
+      <Grid container spacing={-8} justifyContent="center">
         <CardContent>
           <Typography className={classes.title} color="textSecondary" gutterBottom>
 
           </Typography>
-          <Typography variant="h5" component="h2">
-            Priority Links
-          </Typography>
+          <Grid container spacing={-8} justifyContent="center">
+            <Typography variant="h5" component="h2">
+              Priority Links
+            </Typography>
+          </Grid>
           <Typography className={classes.pos} color="textSecondary">
             {/* <DisableElevation/> */}
 
@@ -62,10 +65,11 @@ export default function OutlinedCard() {
             { }
           </Typography>
         </CardContent>
-        <CardActions>
-          {/* <Button size="small">Learn More</Button> */}
-        </CardActions>
-      </Card>
-    </Grid>
+      </Grid>
+      <CardActions>
+        {/* <Button size="small">Learn More</Button> */}
+      </CardActions>
+    </Card>
+    // {/* </Grid> */ }
   );
 }

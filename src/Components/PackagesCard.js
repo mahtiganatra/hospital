@@ -14,6 +14,7 @@ import DisableElevation7 from './Female'
 import SimpleListp from './PackageList';
 import SimpleListq from './PackageList2'
 import SimpleListr from './PackageList3';
+import Grid from '@material-ui/core/Grid';
 
 
 
@@ -41,47 +42,50 @@ export default function PackagesCard() {
 
   return (
     <Card className={classes.root} variant="outlined">
-      <CardContent>
+      <Grid container spacing={-20} justifyContent="center">
+        <CardContent>
 
-        
 
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          
-        </Typography>
-        <Typography variant="h6" component="h2">
-         Packages
-         <DisableElevation6/>
-         <DisableElevation7/>
 
-         
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          {/* <DisableElevation/> */}
-          
 
-        </Typography>
-        <Typography variant="body2" component="p">
-          {/* <DisableElevation1/> */}
+          <Typography className={classes.title} color="textSecondary" gutterBottom>
 
           </Typography>
-        <Typography variant="body6" component="p">  
+          <Typography variant="h6" component="h2">
+            Packages
+            <DisableElevation6 />
+            <DisableElevation7 />
 
-        
-        <SimpleListp/>
-        <SimpleListq/>
-        <SimpleListr/>
-        
 
-         
-          <br />
-         
-          {}
-        </Typography>
-      </CardContent>
-     
-      <CardActions>
-        {/* <Button size="small">Learn More</Button> */}
-      </CardActions>
+          </Typography>
+          <Typography className={classes.pos} color="textSecondary">
+            {/* <DisableElevation/> */}
+
+
+          </Typography>
+          <Typography variant="body2" component="p">
+            {/* <DisableElevation1/> */}
+
+          </Typography>
+          <Typography variant="body6" component="p">
+
+
+            <SimpleListp />
+            <SimpleListq />
+            <SimpleListr />
+
+
+
+            <br />
+
+            { }
+          </Typography>
+        </CardContent>
+
+        <CardActions>
+          {/* <Button size="small">Learn More</Button> */}
+        </CardActions>
+      </Grid>
     </Card>
   );
 }

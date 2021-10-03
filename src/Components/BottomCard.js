@@ -5,6 +5,8 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+import SocialM from './SocialMedia';
 
 const useStyles = makeStyles({
   root: {
@@ -28,34 +30,64 @@ export default function OutlinedCard1() {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Card className={classes.root} variant="outlined">
-      <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          
-        </Typography>
-        <Typography variant="h5" component="h2">
-          Lilavati Hospital
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          More than healthcare, Human Care
-        </Typography>
-        <Typography variant="body2" component="p">
-          Ambulance
-          Convenience and Facilities
-          Media and press Release
-          Social Initiatives
-          Floor Directory
-          Photo Gallery
-          Statutory Compliance
-          E Tender
 
-          <br />
-          {}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        {/* <Button size="small">Learn More</Button> */}
-      </CardActions>
+    <Card className={classes.root} variant="outlined">
+      <Grid container spacing={-8} justifyContent="center">
+        <CardContent>
+          <Typography className={classes.title} color="textSecondary" gutterBottom>
+
+
+          </Typography>
+          <Grid item xs={12} >
+            <Typography variant="h5" component="h2">
+              Lilavati Hospital
+            </Typography>
+          </Grid>
+          <Typography className={classes.pos} color="textSecondary">
+            More than healthcare, Human Care
+          </Typography>
+          <Grid item xs={12}>
+            <Typography variant="body2" component="p">
+              Ambulance
+              <Grid item xs={12}>
+                Convenience and Facilities
+              </Grid>
+
+              <Grid item xs={12}>
+                Media and press Release
+              </Grid>
+
+              <Grid item xs={12}>
+                Social Initiatives
+              </Grid>
+
+              <Grid item xs={12}>
+                Floor Directory
+              </Grid>
+
+              <Grid item xs={12}>
+                Photo Gallery
+              </Grid>
+
+              <Grid item xs={12}>
+                Statutory Compliance
+              </Grid>
+
+              <Grid item xs={12}>
+                E Tender
+              </Grid>
+              <SocialM />
+
+              <br />
+              { }
+            </Typography>
+          </Grid>
+        </CardContent>
+        <CardActions>
+          {/* <Button size="small">Learn More</Button> */}
+        </CardActions>
+      </Grid>
     </Card>
+
   );
 }

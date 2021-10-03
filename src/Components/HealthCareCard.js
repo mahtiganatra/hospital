@@ -10,6 +10,7 @@ import DisableElevation1 from './Appointment';
 import DisableElevation2 from './HealthCare';
 import SimpleList from './HomeList';
 import HealthCareList from './HealthcareList';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
   root: {
@@ -33,36 +34,44 @@ export default function HealthCareCard() {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
+    // <Grid container spacing={-20} justifyContent="center">
     <Card className={classes.root} variant="outlined">
-      <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          
-        </Typography>
-        <Typography variant="h5" component="h2">
-          Health
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          {/* <DisableElevation/> */}
-          
+      <Grid container spacing={-20} justifyContent="center">
+        <CardContent>
 
-        </Typography>
-        <Typography variant="body2" component="p">
-          {/* <DisableElevation1/> */}
+          <Typography className={classes.title} color="textSecondary" gutterBottom>
 
           </Typography>
-        <Typography variant="body6" component="p">  
+          <Typography variant="h5" component="h2">
+            Health Care
+          </Typography>
+          <Typography className={classes.pos} color="textSecondary">
+            {/* <DisableElevation/> */}
 
-        <HealthCareList/>
 
-         
-          <br />
-         
-          {}
-        </Typography>
-      </CardContent>
+          </Typography>
+          <Typography variant="body2" component="p">
+            {/* <DisableElevation1/> */}
+
+          </Typography>
+          <Typography variant="body6" component="p">
+
+            <HealthCareList />
+
+
+            <br />
+
+            { }
+          </Typography>
+
+        </CardContent>
+      </Grid>
+
+
       <CardActions>
         {/* <Button size="small">Learn More</Button> */}
       </CardActions>
-    </Card>
+    </Card >
+    // </Grid>
   );
 }

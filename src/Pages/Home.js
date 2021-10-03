@@ -58,9 +58,10 @@ export default function Home() {
             <SwipeableTextMobileStepper />
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid container spacing={-8} justifyContent="center">
             <BasicTextFields />
           </Grid>
+
 
           <Grid item xs={10}>
             <OutlinedCard4 />
@@ -86,27 +87,27 @@ export default function Home() {
             <OutlinedCard9 />
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid container spacing={-8} justifyContent="center">
             <BasicTextFields1 />
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12}>
             <MediaCard />
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12}>
             <MediaCard1 />
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12}>
             <MediaCard2 />
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={12}>
             <MediaCard3 />
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid container spacing={-8} justifyContent="center">
             <BasicTextFields2 />
           </Grid>
 

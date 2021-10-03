@@ -5,6 +5,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 
 
 
@@ -33,57 +34,82 @@ export default function SeniorCard() {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <Card className={classes.root} variant="outlined">
-      <CardContent>
+    <Grid container spacing={-20} justifyContent="center">
+      <Card className={classes.root} variant="outlined">
+        <CardContent>
 
-        
 
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          
-        </Typography>
-        <Typography variant="h6" component="h2">
-         Senior Citizen - Male
-         
 
-         
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          {/* <DisableElevation/> */}
-          Package Description
-          
-
-        </Typography>
-        <Typography variant="body2" component="p">
-          {/* <DisableElevation1/> */}
-          Only males above the age of 60 years are 
-eligible for this package.
-    Early intervention helps in reducing the cost 
-to a great extent.The package focuses on-
-Ophthalmology.
-General Routine Blood check up with 
-Physician, Surgeon/Gynaecology.
-ENT.
-Dental Consultation.
-It also offers gender specific tests like 
-Prostate screening.
+          <Typography className={classes.title} color="textSecondary" gutterBottom>
 
           </Typography>
-          <Typography variant="h5" component="h2">
-        ₹ 9000 /-
+          <Typography variant="h6" component="h2">
+            Senior Citizen - Male
 
-        
-        
 
-         
-          <br />
-         
-          {}
-        </Typography>
-      </CardContent>
-     
-      <CardActions>
-        {/* <Button size="small">Learn More</Button> */}
-      </CardActions>
-    </Card>
+
+          </Typography>
+          <Typography className={classes.pos} color="textSecondary">
+            {/* <DisableElevation/> */}
+            Package Description
+
+
+          </Typography>
+          <Typography variant="body2" component="p">
+            {/* <DisableElevation1/> */}
+            <Grid item xs={12} >
+              Only males above the age of 60 years are
+              eligible for this package.
+            </Grid>
+
+            <Grid item xs={24} >
+              Early intervention helps in reducing the cost
+              to a great extent.
+            </Grid>
+
+            <Grid item xs={12} >
+              The package focuses on-
+              Ophthalmology.
+            </Grid>
+
+            <Grid item xs={12} >
+              General Routine Blood check up with
+              Physician, Surgeon/Gynaecology.
+              ENT.
+            </Grid>
+
+            <Grid item xs={12} >
+              Dental Consultation.
+            </Grid>
+
+            <Grid item xs={12} >
+              It also offers gender specific tests like
+              Prostate screening.
+            </Grid>
+
+
+          </Typography>
+          <Grid container spacing={-20} justifyContent="center">
+            <Typography variant="h5" component="h2">
+              ₹ 9000 /-
+
+
+
+
+
+
+
+              <br />
+
+              { }
+            </Typography>
+          </Grid>
+        </CardContent>
+
+        <CardActions>
+          {/* <Button size="small">Learn More</Button> */}
+        </CardActions>
+      </Card>
+    </Grid>
   );
 }

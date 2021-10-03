@@ -9,6 +9,7 @@ import Contact from './Contact'
 import Email from './Email'
 import DisableElevation8 from './ReqAppBt';
 import DisableElevation12 from './ReqAppBt2';
+import Grid from '@material-ui/core/Grid';
 
 
 import Name from './Name';
@@ -36,38 +37,57 @@ export default function InfoCard() {
 
   return (
     <Card className={classes.root} variant="outlined">
-      <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          
-        </Typography>
-        <Typography variant="h5" component="h2">
-          Help us get back to you
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          {/* <DisableElevation/> */}
-          <Name/>
-          
+      <Grid container spacing={20} justifyContent="center">
+        <CardContent>
+          <Typography className={classes.title} color="textSecondary" gutterBottom>
 
-        </Typography>
-        <Typography variant="body2" component="p">
-          {/* <DisableElevation1/> */}
-          <Email/>
 
           </Typography>
-        <Typography variant="body6" component="p">  
-        <DatePickers3/>
-          <Contact/>
-        
-<DisableElevation12/>
-         
-          <br />
-         
-          {}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        {/* <Button size="small">Learn More</Button> */}
-      </CardActions>
+          <Grid item xs={12} >
+            <Typography variant="h5" component="h2">
+              Help us get back to you
+            </Typography>
+          </Grid>
+
+          <Grid item xs={12} >
+            <Typography className={classes.pos} color="textSecondary">
+              {/* <DisableElevation/> */}
+
+              <Name />
+
+            </Typography>
+          </Grid>
+
+          <Grid item xs={12} >
+            <Typography variant="body2" component="p">
+              {/* <DisableElevation1/> */}
+              <Email />
+
+            </Typography>
+          </Grid>
+
+
+          <Typography variant="body6" component="p">
+
+            <Grid container spacing={20} justifyContent="center">
+              {/* <Grid item xs={12} justifyContent="center" > */}
+              <DatePickers3 />
+            </Grid>
+            {/* </Grid> */}
+            <Contact />
+
+            <DisableElevation12 />
+
+            {/* <br /> */}
+
+            { }
+          </Typography>
+
+        </CardContent>
+        <CardActions>
+          {/* <Button size="small">Learn More</Button> */}
+        </CardActions>
+      </Grid>
     </Card>
   );
 }

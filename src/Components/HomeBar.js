@@ -15,13 +15,16 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   menuButton: {
+    color: "#282c34",
     marginRight: theme.spacing(1),
   },
   toolbar: {
+    color: "#282c34",
     minHeight: 50,
     alignItems: 'flex-start',
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(2),
+
   },
   title: {
     flexGrow: 1,
@@ -39,19 +42,31 @@ export default function ProminentAppBar() {
           <IconButton
             edge="start"
             className={classes.menuButton}
-            color="inherit"
+            color="#282c34"
             aria-label="open drawer"
           >
             <MenuIcon />
           </IconButton>
-          
+
+
+
           <Typography className={classes.title} variant="h4" noWrap>
             {/* Lilavati */}
             <img src={LilLogo} className="LilLogo" alt="LilLogo" />
           </Typography>
-          <IconButton aria-label="search" color="inherit">
+          {/* <IconButton aria-label="search" color="inherit"> */}
+          {/* <SearchIcon /> */}
+          {/* </IconButton> */}
+
+          <IconButton
+            edge="start"
+            className={classes.menuButton}
+            color="#282c34"
+            aria-label="open drawer"
+          >
             <SearchIcon />
           </IconButton>
+
           <IconButton aria-label="display more actions" edge="end" color="inherit">
             {/* <MoreIcon /> */}
           </IconButton>

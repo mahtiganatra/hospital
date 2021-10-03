@@ -16,6 +16,7 @@ import Solitare from '../Assets/Solitare.svg'
 import SolitareP from '../Assets/SolitareP.svg'
 import SeniorC from '../Assets/SeniorC.svg'
 import { Link, Router } from "react-router-dom";
+import Grid from '@material-ui/core/Grid';
 
 
 
@@ -35,45 +36,55 @@ export default function SimpleListp() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <List component="nav" aria-label="main mailbox folders">
-        <ListItem button>
-          <ListItemIcon>
-            {/* <AirportShuttleIcon/> */}
-            <img src={Premium} className="Premium" alt="Premium" />
+    <Grid container spacing={-20} justifyContent="center">
+      <div className={classes.root}>
+        <List component="nav" aria-label="main mailbox folders">
 
-          </ListItemIcon>
-          <ListItemText primary="" />
-        </ListItem>
+          <Grid container spacing={-20} justifyContent="center">
+            <ListItem button>
+              <ListItemIcon>
+                {/* <AirportShuttleIcon/> */}
+                <img src={Premium} className="Premium" alt="Premium" />
+
+              </ListItemIcon>
+              <ListItemText primary="" />
+
+            </ListItem>
+          </Grid>
+
+
+          <ListItem button>
+            <ListItemIcon>
+              {/* <CalendarTodayIcon/> */}
+              <img src={Solitare} className="Solitare" alt="Solitare" />
+            </ListItemIcon>
+            {/* <ListItemText primary="Appointment" /> */}
+          </ListItem>
+
+        </List>
+
+        {/* <Divider /> */}
+        {/* <List component="nav" aria-label="main mailbox folders"> */}
+
         <ListItem button>
-          <ListItemIcon>
-            {/* <CalendarTodayIcon/> */}
-            <img src={Solitare} className="Solitare" alt="Solitare" />
-          </ListItemIcon>
-          {/* <ListItemText primary="Appointment" /> */}
-        </ListItem>
-      </List>
-      {/* <Divider /> */}
-      {/* <List component="nav" aria-label="main mailbox folders"> */}
-          
-        <ListItem button>
-            {/* <FavoriteBorderIcon/> */}
-            <img src={SolitareP} className="SolitareP" alt="SolitareP" />
+          {/* <FavoriteBorderIcon/> */}
+          <img src={SolitareP} className="SolitareP" alt="SolitareP" />
           {/* <ListItemText primary="Health Care" /> */}
         </ListItem>
         {/* <ListItemLink href="#simple-list"> */}
-            {/* <AttachMoney/> */}
-            {/* <img src={SeniorC} className="SeniorC" alt="SeniorC" /> */}
-          {/* <ListItemText primary="Finance" /> */}
-          <Link to={process.env.PUBLIC_URL + '/Senior'}>
+        {/* <AttachMoney/> */}
+        {/* <img src={SeniorC} className="SeniorC" alt="SeniorC" /> */}
+        {/* <ListItemText primary="Finance" /> */}
+        <Link to={process.env.PUBLIC_URL + '/Senior'}>
           <ListItem button>
-          <img src={SeniorC} className="SeniorC" alt="SeniorC" /> </ListItem>
+            <img src={SeniorC} className="SeniorC" alt="SeniorC" /> </ListItem>
         </Link>
-        
+
 
         {/* </ListItemLink> */}
-      {/* </List> */}
-    </div>
+        {/* </List> */}
+      </div>
+    </Grid>
   );
 
 }

@@ -49,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     pointerEvents: 'none',
     display: 'flex',
+    color: "#282c34",
     alignItems: 'center',
     justifyContent: 'center',
   },
