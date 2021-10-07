@@ -14,6 +14,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  AppBar: {
+    padding: '1%',
+    background: '#ffffff',
+  },
+
   menuButton: {
     color: "#282c34",
     marginRight: theme.spacing(1),
@@ -37,7 +42,9 @@ export default function ProminentAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" className={classes.AppBar}>
+
+
         <Toolbar className={classes.toolbar}>
           <IconButton
             edge="start"

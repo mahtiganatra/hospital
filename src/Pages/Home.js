@@ -111,19 +111,19 @@ export default function Home() {
             <BasicTextFields2 />
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={10} sm={10} md={5} lg={5} xl={5}>
             <MediaCard5 />
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={10} sm={10} md={5} lg={5} xl={5}>
             <MediaCard6 />
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={10} sm={10} md={5} lg={5} xl={5}>
             <MediaCard7 />
           </Grid>
 
-          <Grid item xs={10}>
+          <Grid item xs={10} sm={10} md={5} lg={5} xl={5}>
             <MediaCard8 />
           </Grid>
 

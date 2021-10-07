@@ -17,11 +17,24 @@ import Info from './Pages/Info';
 import Thankyou from './Pages/Thankyou';
 import SimpleDialogDemo from './Components/EmergencyOpen';
 import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+  App: {
+    background: "#F1FFFB",
+    height: "100%",
+  },
+});
 
 
 function App() {
+  const classes = useStyles();
+
+
   return (
     <div className="App">
+      {/* // <div className={classes.App}> */}
+
       {/* Header (Navigation Bar) */}
       <header className="App-header">
         <ProminentAppBar />
