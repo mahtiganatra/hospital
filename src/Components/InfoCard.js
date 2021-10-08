@@ -43,13 +43,13 @@ export default function InfoCard() {
 
 
           </Typography>
-          <Grid item xs={12} >
+          <Grid item xs={12}>
             <Typography variant="h5" component="h2">
               Help us get back to you
             </Typography>
           </Grid>
 
-          <Grid item xs={12} >
+          <Grid item xs={12}>
             <Typography className={classes.pos} color="textSecondary">
               {/* <DisableElevation/> */}
 
@@ -58,7 +58,7 @@ export default function InfoCard() {
             </Typography>
           </Grid>
 
-          <Grid item xs={12} >
+          <Grid item xs={12}>
             <Typography variant="body2" component="p">
               {/* <DisableElevation1/> */}
               <Email />

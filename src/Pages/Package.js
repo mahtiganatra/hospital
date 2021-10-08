@@ -9,11 +9,22 @@ import OutlinedCard from '../Components/HomepageCard';
 import IconButtons from '../Components/HomeIcons';
 import OutlinedCard1 from '../Components/BottomCard';
 import PackagesCard from '../Components/PackagesCard';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+  App: {
+    background: "#F1FFFB",
+    height: "100%",
+    alignContent: "center", alignItems: "center",
+  },
+});
 
 
 
 export default function Package() {
+  const classes = useStyles();
   return (
+    <div className={classes.App}>
     <React.Fragment>
         <Container fixed>
 <PackagesCard/>
@@ -29,5 +40,6 @@ export default function Package() {
            
         </Container>
     </React.Fragment>
+    </div>
   );
 }

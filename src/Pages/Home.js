@@ -31,111 +31,127 @@ import MediaCard8 from '../Components/SocialInitCard4';
 // import Hospilogo from '../Assets/lilavati.svg'\
 // import Ambulance from '../Assets/Ambulance.svg'
 import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+  App: {
+    background: "#F1FFFB",
+    height: "100%",
+    alignContent: "center", alignItems: "center",
+  },
+});
+
+
+// function Home() {
+// const classes = useStyles();
 
 
 export default function Home() {
+  const classes = useStyles();
   return (
-    <React.Fragment>
-      <Container fixed>
-        <Grid container spacing={3} justifyContent="center">
+    <div className={classes.App}>
+      <React.Fragment>
+        <Container fixed>
+          <Grid container spacing={3} justifyContent="center">
 
-          {/* <img src={Hospilogo} className="HospiLogo" alt="HospiLogo" /> */}
+            {/* <img src={Hospilogo} className="HospiLogo" alt="HospiLogo" /> */}
 
 
-          {/* <ProminentAppBar/> */}
+            {/* <ProminentAppBar/> */}
 
-          <Grid item xs={10}>
-            <OutlinedCard />
+            <Grid item xs={10}>
+              <OutlinedCard />
+            </Grid>
+
+            {/* <IconButtons/> */}
+            {/* <IconButtons/> */}
+            {/* <IconButtons/> */}
+            {/* <OutlinedCard1/> */}
+            {/* <SimpleList/> */}
+
+            <Grid item xs={10} xl={10}>
+              <SwipeableTextMobileStepper />
+            </Grid>
+
+            <Grid container spacing={-8} justifyContent="center">
+              <BasicTextFields />
+            </Grid>
+
+
+            <Grid item xs={10}>
+              <OutlinedCard4 />
+            </Grid>
+
+            <Grid item xs={10}>
+              <OutlinedCard5 />
+            </Grid>
+
+            <Grid item xs={10}>
+              <OutlinedCard6 />
+            </Grid>
+
+            <Grid item xs={10}>
+              <OutlinedCard7 />
+            </Grid>
+
+            <Grid item xs={10}>
+              <OutlinedCard8 />
+            </Grid>
+
+            <Grid item xs={10}>
+              <OutlinedCard9 />
+            </Grid>
+
+            <Grid container spacing={-8} justifyContent="center">
+              <BasicTextFields1 />
+            </Grid>
+
+            <Grid item xs={12}>
+              <MediaCard />
+            </Grid>
+
+            <Grid item xs={12}>
+              <MediaCard1 />
+            </Grid>
+
+            <Grid item xs={12}>
+              <MediaCard2 />
+            </Grid>
+
+            <Grid item xs={12}>
+              <MediaCard3 />
+            </Grid>
+
+            <Grid container spacing={-8} justifyContent="center">
+              <BasicTextFields2 />
+            </Grid>
+
+            <Grid item xs={10} sm={10} md={5} lg={5} xl={5}>
+              <MediaCard5 />
+            </Grid>
+
+            <Grid item xs={10} sm={10} md={5} lg={5} xl={5}>
+              <MediaCard6 />
+            </Grid>
+
+            <Grid item xs={10} sm={10} md={5} lg={5} xl={5}>
+              <MediaCard7 />
+            </Grid>
+
+            <Grid item xs={10} sm={10} md={5} lg={5} xl={5}>
+              <MediaCard8 />
+            </Grid>
+
+
+
+
+
+
+
           </Grid>
 
-          {/* <IconButtons/> */}
-          {/* <IconButtons/> */}
-          {/* <IconButtons/> */}
-          {/* <OutlinedCard1/> */}
-          {/* <SimpleList/> */}
-
-          <Grid item xs={10} xl={10}>
-            <SwipeableTextMobileStepper />
-          </Grid>
-
-          <Grid container spacing={-8} justifyContent="center">
-            <BasicTextFields />
-          </Grid>
-
-
-          <Grid item xs={10}>
-            <OutlinedCard4 />
-          </Grid>
-
-          <Grid item xs={10}>
-            <OutlinedCard5 />
-          </Grid>
-
-          <Grid item xs={10}>
-            <OutlinedCard6 />
-          </Grid>
-
-          <Grid item xs={10}>
-            <OutlinedCard7 />
-          </Grid>
-
-          <Grid item xs={10}>
-            <OutlinedCard8 />
-          </Grid>
-
-          <Grid item xs={10}>
-            <OutlinedCard9 />
-          </Grid>
-
-          <Grid container spacing={-8} justifyContent="center">
-            <BasicTextFields1 />
-          </Grid>
-
-          <Grid item xs={12}>
-            <MediaCard />
-          </Grid>
-
-          <Grid item xs={12}>
-            <MediaCard1 />
-          </Grid>
-
-          <Grid item xs={12}>
-            <MediaCard2 />
-          </Grid>
-
-          <Grid item xs={12}>
-            <MediaCard3 />
-          </Grid>
-
-          <Grid container spacing={-8} justifyContent="center">
-            <BasicTextFields2 />
-          </Grid>
-
-          <Grid item xs={10} sm={10} md={5} lg={5} xl={5}>
-            <MediaCard5 />
-          </Grid>
-
-          <Grid item xs={10} sm={10} md={5} lg={5} xl={5}>
-            <MediaCard6 />
-          </Grid>
-
-          <Grid item xs={10} sm={10} md={5} lg={5} xl={5}>
-            <MediaCard7 />
-          </Grid>
-
-          <Grid item xs={10} sm={10} md={5} lg={5} xl={5}>
-            <MediaCard8 />
-          </Grid>
-
-
-
-
-
-
-
-        </Grid>
-
-      </Container>
-    </React.Fragment >
+        </Container>
+      </React.Fragment >
+    </div>
   );
 }

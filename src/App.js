@@ -23,6 +23,7 @@ const useStyles = makeStyles({
   App: {
     background: "#F1FFFB",
     height: "100%",
+    alignContent: "center", alignItems: "center",
   },
 });
 

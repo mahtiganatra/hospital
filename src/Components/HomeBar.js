@@ -16,12 +16,13 @@ const useStyles = makeStyles((theme) => ({
   },
   AppBar: {
     padding: '1%',
+    margin: 10,
     background: '#ffffff',
   },
 
   menuButton: {
     color: "#282c34",
-    marginRight: theme.spacing(1),
+    marginRight: theme.spacing(0),
   },
   toolbar: {
     color: "#282c34",
@@ -70,7 +71,9 @@ export default function ProminentAppBar() {
             className={classes.menuButton}
             color="#282c34"
             aria-label="open drawer"
+
           >
+
             <SearchIcon />
           </IconButton>
 
