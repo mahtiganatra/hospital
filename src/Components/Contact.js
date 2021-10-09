@@ -17,35 +17,35 @@ export default function Contact() {
   return (
     <form className={classes.root} noValidate autoComplete="off">
       {/* <div> */}
-        <TextField label="Contact no." id="standard-size-small" defaultValue="9837545345" size="small" />
-        {/* <TextField label="Size" id="standard-size-normal" defaultValue="Normal" /> */}
+      <TextField label="Contact no." id="standard-size-small" defaultValue="9837545345" size="small" />
+      {/* <TextField label="Size" id="standard-size-normal" defaultValue="Normal" /> */}
       {/* </div> */}
       {/* <div> */}
-        <TextField
-        
-        // {/label="Mohan Mehta" }
-        // {/* //   id="filled-size-small" */}
-        // {/* //   defaultValue="Mohan Mehta" */}
-        // {/* //   variant="filled" */}
-        // {/* //   size="small" */}
-        />
-        {/* <TextField label="Size" id="filled-size-normal" defaultValue="Normal" variant="filled" /> */}
+      {/* <TextField */}
+
+      {/* {/label="Mohan Mehta" } */}
+      {/* //   id="filled-size-small" */}
+      {/* //   defaultValue="Mohan Mehta" */}
+      {/* //   variant="filled" */}
+      {/* //   size="small" */}
+      {/* /> */}
+      {/* <TextField label="Size" id="filled-size-normal" defaultValue="Normal" variant="filled" /> */}
       {/* </div> */}
-      <div>
-        {/* <TextField */}
-          {/* label="Size" */}
-          {/* id="outlined-size-small" */}
-          {/* defaultValue="Small" */}
-          {/* variant="outlined" */}
-          {/* size="small" */}
-        {/* /> */}
-        {/* <TextField */}
-          {/* label="Size" */}
-          {/* id="outlined-size-normal" */}
-          {/* defaultValue="Normal" */}
-          {/* variant="outlined" */}
-        {/* /> */}
-      </div>
-    </form>
+      {/* <div> */}
+      {/* <TextField */}
+      {/* label="Size" */}
+      {/* id="outlined-size-small" */}
+      {/* defaultValue="Small" */}
+      {/* variant="outlined" */}
+      {/* size="small" */}
+      {/* /> */}
+      {/* <TextField */}
+      {/* label="Size" */}
+      {/* id="outlined-size-normal" */}
+      {/* defaultValue="Normal" */}
+      {/* variant="outlined" */}
+      {/* /> */}
+      {/* </div> */}
+    </form >
   );
 }

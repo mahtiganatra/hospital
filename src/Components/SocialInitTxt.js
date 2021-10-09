@@ -18,9 +18,11 @@ export default function BasicTextFields2() {
   return (
     <Grid container spacing={20} justifyContent="center">
       <form className={classes.root} noValidate autoComplete="off">
-        <TextField id="standard-basic" label="Social Initiatives" />
-        {/* <TextField id="filled-basic" label="Filled" variant="filled" /> */}
-        {/* <TextField id="outlined-basic" label="Outlined" variant="outlined" /> */}
+        <Grid item xs={10} sm={10} md={5} lg={5} xl={5}>
+          <TextField id="standard-basic" label="Social Initiatives" />
+          {/* <TextField id="filled-basic" label="Filled" variant="filled" /> */}
+          {/* <TextField id="outlined-basic" label="Outlined" variant="outlined" /> */}
+        </Grid>
       </form>
     </Grid>
   );

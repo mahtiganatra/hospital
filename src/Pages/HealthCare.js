@@ -17,14 +17,14 @@ export default function HealthCare() {
   const classes = useStyles();
   return (
     <div className={classes.App}>
-    <React.Fragment>
+      <React.Fragment>
         <Container fixed>
-          <HealthCareCard/>
+          <HealthCareCard />
 
-            {/* <DatePickers/> */}
-            {/* <ContainedButtons/> */}
+          {/* <DatePickers/> */}
+          {/* <ContainedButtons/> */}
         </Container>
-    </React.Fragment>
+      </React.Fragment>
     </div>
   );
 }
