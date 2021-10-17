@@ -8,6 +8,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import LilLogo from '../Assets/LilLogo.svg'
+import DisableElevation18 from './Logo';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -60,7 +61,8 @@ export default function ProminentAppBar() {
 
           <Typography className={classes.title} variant="h4" noWrap>
             {/* Lilavati */}
-            <img src={LilLogo} className="LilLogo" alt="LilLogo" />
+            {/* <img src={LilLogo} className="LilLogo" alt="LilLogo" /> */}
+            <DisableElevation18 />
           </Typography>
           {/* <IconButton aria-label="search" color="inherit"> */}
           {/* <SearchIcon /> */}

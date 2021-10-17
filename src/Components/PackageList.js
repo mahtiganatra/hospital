@@ -42,12 +42,15 @@ export default function SimpleListp() {
 
           <Grid container spacing={-20} justifyContent="center">
             <ListItem button>
-              <ListItemIcon>
-                {/* <AirportShuttleIcon/> */}
-                <img src={Premium} className="Premium" alt="Premium" />
+              <Grid container spacing={-20} justifyContent="center">
+                <ListItemIcon>
+                  {/* <AirportShuttleIcon/> */}
+                  <img src={Premium} className="Premium" alt="Premium" />
 
-              </ListItemIcon>
-              <ListItemText primary="" />
+
+                </ListItemIcon>
+                <ListItemText primary="" />
+              </Grid>
 
             </ListItem>
           </Grid>

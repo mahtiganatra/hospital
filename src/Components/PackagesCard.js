@@ -10,11 +10,12 @@ import DisableElevation1 from './Appointment';
 import DisableElevation2 from './HealthCare';
 // import SimpleList from './HomeList';
 import DisableElevation6 from './Male';
-import DisableElevation7 from './Female'
+import DisableElevation7 from './Female';
 import SimpleListp from './PackageList';
 import SimpleListq from './PackageList2'
 import SimpleListr from './PackageList3';
 import Grid from '@material-ui/core/Grid';
+
 
 
 
@@ -53,8 +54,16 @@ export default function PackagesCard() {
           </Typography>
           <Typography variant="h6" component="h2">
             Packages
-            <DisableElevation6 />
-            <DisableElevation7 />
+
+            <Grid container spacing={-20} justifyContent="center">
+              <Grid item xs={10} sm={10} md={5} lg={5} xl={5}>
+                <DisableElevation6 />
+              </Grid>
+
+              <Grid item xs={10} sm={10} md={5} lg={5} xl={5}>
+                <DisableElevation7 />
+              </Grid>
+            </Grid>
 
 
           </Typography>
@@ -70,9 +79,16 @@ export default function PackagesCard() {
           <Typography variant="body6" component="p">
 
 
-            <SimpleListp />
-            <SimpleListq />
-            <SimpleListr />
+            <Grid container spacing={-20} justifyContent="center">
+              <Grid item xs={10} sm={10} md={5} lg={5} xl={5}>
+                <SimpleListp />
+                <SimpleListq />
+                <SimpleListr />
+              </Grid>
+            </Grid>
+
+
+
 
 
 
@@ -86,6 +102,6 @@ export default function PackagesCard() {
           {/* <Button size="small">Learn More</Button> */}
         </CardActions>
       </Grid>
-    </Card>
+    </Card >
   );
 }

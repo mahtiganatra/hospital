@@ -46,7 +46,7 @@ function App() {
       {/* Router - Pages */}
       <Switch>
         {/* <Route path={process.env.PUBLIC_URL + '/'} exact > <Home/> </Route> */}
-        <Route path={process.env.PUBLIC_URL + '/home'} > <Home /> </Route>
+        <Route path={process.env.PUBLIC_URL + '/Home'} > <Home /> </Route>
         <Route path={process.env.PUBLIC_URL + '/gallery'}  > <Gallery /> </Route>
         <Route path={process.env.PUBLIC_URL + '/services'}  > <Services /> </Route>
         <Route path={process.env.PUBLIC_URL + '/HealthCare'} > <HealthCare /> </Route>

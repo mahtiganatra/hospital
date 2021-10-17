@@ -12,7 +12,7 @@ import Tick from '../Assets/Tick.svg'
 import DisableElevation9 from './Bookap';
 import DisableElevation10 from './Homebt';
 import Grid from '@material-ui/core/Grid';
-import DisableElevation15 from './Book';
+import DisableElevation17 from './BookAnother';
 
 
 
@@ -73,7 +73,7 @@ export default function ThankyouC() {
             {/* <DisableElevation1/> */}
             <DisableElevation10 />
             <Grid item xs={12} >
-              <DisableElevation15 />
+              <DisableElevation17 />
             </Grid>
 
 
