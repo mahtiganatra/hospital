@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hospital/static/css/main.eca31959.chunk.css",
-    "main.js": "/hospital/static/js/main.17dcd998.chunk.js",
-    "main.js.map": "/hospital/static/js/main.17dcd998.chunk.js.map",
+    "main.js": "/hospital/static/js/main.e3b65fa0.chunk.js",
+    "main.js.map": "/hospital/static/js/main.e3b65fa0.chunk.js.map",
     "runtime-main.js": "/hospital/static/js/runtime-main.1488be40.js",
     "runtime-main.js.map": "/hospital/static/js/runtime-main.1488be40.js.map",
     "static/js/2.ea0fda82.chunk.js": "/hospital/static/js/2.ea0fda82.chunk.js",
@@ -49,6 +49,6 @@
     "static/js/runtime-main.1488be40.js",
     "static/js/2.ea0fda82.chunk.js",
     "static/css/main.eca31959.chunk.css",
-    "static/js/main.17dcd998.chunk.js"
+    "static/js/main.e3b65fa0.chunk.js"
   ]
 }
